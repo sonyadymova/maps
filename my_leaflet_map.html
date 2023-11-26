@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>leaflet</title>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <!-- Include Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <style>
@@ -19,7 +18,25 @@
         var map = L.map('map').setView([latitude, longitude], zoomLevel);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         // Add markers, polygons, or other map features here
-	</script>
+    </script>
+</body>
+</html>
+
+</head>
+<body>
+    <!-- Create a div to hold the map -->
+    <div id="map"></div>
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        // JavaScript code to initialize the map
+        var map = L.map('map').setView([51.505, -0.09], 13); // Set initial coordinates and zoom level
+
+        // Add a tile layer (e.g., OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    </script>
 </body>
 </html>
 	
