@@ -17,6 +17,9 @@
         // JavaScript code to initialize and create the map
         var map = L.map('map').setView([latitude, longitude], zoomLevel);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);
         // Add markers, polygons, or other map features here
     </script>
 </body>
